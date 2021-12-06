@@ -35,7 +35,8 @@ public class TesteParteRegistro {
 		driver = new FirefoxDriver(options);
 
 		cadastro = new Cadastro(driver);
-		user = new User("aislan12345", "titaniwm2021", "titaniwm3dstudio3@gmail.com");
+		//Preencha aqui com os parametros do usuário, Nome, Senha, e E-mail respectivamente	
+		user = new User("", "", "");
 
 	}
 
