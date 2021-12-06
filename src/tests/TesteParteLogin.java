@@ -35,7 +35,8 @@ public class TesteParteLogin {
 		driver = new FirefoxDriver(options);
 
 		login = new Login(driver);
-		user = new User("aislan", "titaniwm2014", "titaniwm3dstudio3@gmail.com");
+		//Preencha aqui com os parametros do usuário, Nome, Senha, e E-mail respectivamente	
+		user = new User("", "", "");
 
 	}
 
