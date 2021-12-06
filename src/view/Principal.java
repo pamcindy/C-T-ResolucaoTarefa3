@@ -62,7 +62,8 @@ public class Principal {
 		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver(options);
 
-		User user = new User("aislan123", "titaniwm2021", "titaniwm3dstudio@gmail.com");
+		//Preencha aqui com os parametros do usu√°rio, Nome, Senha, e E-mail respectivamente	
+		User user = new User("", "", "");
 		Question question = new Question();
 		question.setCategory(listaCategory[0]);
 		question.setType(listaType[0]);
@@ -72,7 +73,7 @@ public class Principal {
 		question.setIncorrect_answer1("teste1");
 		question.setIncorrect_answer2("teste2");
 		question.setIncorrect_answer3("teste3");
-		question.setReferences("nada n„o");
+		question.setReferences("nada n√£o");
 
 		
 
@@ -192,23 +193,23 @@ public class Principal {
 						System.out.println("Retorno: " + retorno);
 
 						if (retorno.contains("SUCCESS")) {
-							System.out.println("Quest„o adicionada com sucesso");
+							System.out.println("Quest√£o adicionada com sucesso");
 
 						
 
 						} else {
-							System.out.println("Erro ao Adicionar Quest„o!");
+							System.out.println("Erro ao Adicionar Quest√£o!");
 						}
 
 					} else {
-						System.out.println("Erro ao Adicionar Quest„o!");
+						System.out.println("Erro ao Adicionar Quest√£o!");
 					}
 					
 				} else {
 					System.out.println("Erro ao preencher Campos!");
 				}
 			}else {
-				System.out.println("Erro ao Adicionar Quest„o!");
+				System.out.println("Erro ao Adicionar Quest√£o!");
 			}
 		}
 		
