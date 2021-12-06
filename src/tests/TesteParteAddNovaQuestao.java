@@ -76,7 +76,8 @@ public class TesteParteAddNovaQuestao {
 		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
 		driver = new FirefoxDriver(options);
 
-		user = new User("aislan", "titaniwm2014", "titaniwm3dstudio3@gmail.com");
+		//Preencha aqui com os parametros do usu√°rio, Nome, Senha, e E-mail respectivamente	
+		user = new User("", "", "");
 
 		login = new Login(driver);
 
@@ -85,7 +86,7 @@ public class TesteParteAddNovaQuestao {
 		question.setCategory(listaCategory[8]);
 		question.setType(listaType[0]);
 		question.setDifficulty(listaDifficulty[2]);
-		question.setQuestion("Qual era a cor do cavalo branco de napole„o");
+		question.setQuestion("Qual era a cor do cavalo branco de napole√£o");
 		question.setCorrect_answer("Marrron");
 		question.setIncorrect_answer1("Branco");
 		question.setIncorrect_answer2("Cinza");
@@ -148,12 +149,12 @@ public class TesteParteAddNovaQuestao {
 		System.out.println("Retorno: " + retorno);
 
 		if (retorno.contains("SUCCESS")) {
-			System.out.println("Quest„o adicionada com sucesso");
+			System.out.println("Quest√£o adicionada com sucesso");
 
 		
 
 		} else {
-			System.out.println("Erro ao Adicionar Quest„o!");
+			System.out.println("Erro ao Adicionar Quest√£o!");
 		}
 
 
